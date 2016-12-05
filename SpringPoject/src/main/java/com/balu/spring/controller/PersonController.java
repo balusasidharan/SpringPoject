@@ -39,7 +39,7 @@ public class PersonController {
 		model.addAttribute("person" ,new Person());
 		model.addAttribute("listPersons", this.personService.listPersons());
 		
-		
+		System.out.println("Testinh hot deploy");
 		return "person";
 		
 	}
