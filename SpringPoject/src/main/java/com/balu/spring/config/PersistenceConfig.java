@@ -1,4 +1,4 @@
-package com.balu.spring.web;
+package com.balu.spring.config;
 
 import java.util.Properties;
 

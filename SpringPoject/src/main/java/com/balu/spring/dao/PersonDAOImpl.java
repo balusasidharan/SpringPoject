@@ -52,9 +52,7 @@ public class PersonDAOImpl implements PersonDAO {
 		System.out.println("Session Factory : "+ this.sessionFactory);
 		Session session = this.sessionFactory.getCurrentSession();
 		List<Person> personsList = session.createQuery("from Person").list();
-		for(Person p : personsList){
-            logger.info("Person List::"+p);
-        }
+		
         return personsList;
 		
 	}

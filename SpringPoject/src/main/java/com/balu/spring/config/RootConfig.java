@@ -1,4 +1,4 @@
-package com.balu.spring.web;
+package com.balu.spring.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScan.Filter;
