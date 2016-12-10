@@ -35,7 +35,6 @@ public class PersistenceConfig {
 	}
 	
 	@Bean
-	@Autowired
 	public LocalSessionFactoryBean sessionFactory (DataSource dataSource){
 		LocalSessionFactoryBean sfb = new LocalSessionFactoryBean();
 		sfb.setDataSource(dataSource);
@@ -50,7 +49,6 @@ public class PersistenceConfig {
 	}
 	
 	   @Bean
-	   @Autowired
 	   public HibernateTransactionManager transactionManager(SessionFactory sessionFactory) {
 	      HibernateTransactionManager txManager = new HibernateTransactionManager();
 	      txManager.setSessionFactory(sessionFactory);
